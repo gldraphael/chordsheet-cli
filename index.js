@@ -1,9 +1,9 @@
 #! /usr/bin/env node
 
-const processFile = require('./process-file.js');
+const generateChordsheet = require('chordsheet');
 require('colors');
 
-// Print error message and quit if an error is found
+// Print error message and quit when an uncaught exception occurs
 process.on('uncaughtException', function(error) {
   console.error(('Error: ' + error.message).red)
   process.exit(1)
@@ -11,8 +11,6 @@ process.on('uncaughtException', function(error) {
 
 // Get arguments using minimist
 var args = require('minimist')(process.argv.slice(2));
-
-console.log(args)
 
 // Input files don't exist
 if(args._.length == 0) {
@@ -22,5 +20,5 @@ if(args._.length == 0) {
 
 // The arguments are input files
 args._.forEach(function(input) {
-  processFile(input)
+  generateChordsheet(input)
 }, this);
