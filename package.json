@@ -1,0 +1,28 @@
+{
+  "name": "chordsheet-cli",
+  "version": "0.0.1",
+  "description": "A CLI to create chord sheets out of markdown files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gldraphael/chordsheet-cli.git"
+  },
+  "keywords": [
+    "chord",
+    "chords",
+    "chordsheet",
+    "sheet"
+  ],
+  "author": "gldraphael",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gldraphael/chordsheet-cli/issues"
+  },
+  "homepage": "https://github.com/gldraphael/chordsheet-cli#readme",
+  "bin": {
+    "chordsheet": "index.js"
+  }
+}
